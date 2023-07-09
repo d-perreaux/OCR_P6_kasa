@@ -1,11 +1,11 @@
-header {
+.header {
     margin: 24px 32px;
     display: flex;
     justify-content: space-between;
-    & .header__logo-kasa{
+    &__logo-kasa{
         max-width: 200px;
     }
-    & .header__nav{
+    &__nav{
         display: flex;
         justify-content: space-around;
         align-items: center;

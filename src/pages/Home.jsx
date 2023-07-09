@@ -1,8 +1,12 @@
+import Banner from "../components/Banner"
+import img from '../assets/banner_home.jpg'
+
+
 function Home() {
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+        <>
+            <Banner img={img} text />
+        </>
     )
 }
 

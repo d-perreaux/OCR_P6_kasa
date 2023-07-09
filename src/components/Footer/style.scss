@@ -1,4 +1,4 @@
-footer {
+.footer {
     height: 150px;
     padding-top: 25px;
     display: flex;
@@ -6,11 +6,11 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: black;
-    & .footer__logo{
+    &__logo{
         color: white;
         max-width: 125px;
     }
-    & .footer__text{
+    &__text{
         color: white;
     }
 }
