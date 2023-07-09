@@ -1,0 +1,10 @@
+$primary-color: #ff6060;
+
+$breakpoint: (
+	desktop: 768px,
+);
+
+@mixin main-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
