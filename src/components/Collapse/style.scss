@@ -24,8 +24,13 @@
             border: none;
             cursor: pointer;
 
-            &__img{
+            &__chevron{
+                transition: transform 300ms ease;
 
+            &.--open{
+                transform: rotate(-180deg);
+                transition: transform 300ms ease;
+            }
             }
         }
     }

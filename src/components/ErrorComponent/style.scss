@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+.error{
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        font-size: 9em;
+    }
+
+    &__message{
+        font-size: 1.3em;
+        margin: 35px;
+    }
+
+    &__redirect{
+        font-size: 1em;
+        margin: 25px;
+    }
+}

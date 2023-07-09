@@ -9,7 +9,7 @@ import Accomodation from './pages/Accomodation';
 import About from './pages/About';
 import Test from './pages/Test';
 
-import Error from './pages/ErrorPage';
+import ErrorPage from './pages/ErrorPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,8 +21,8 @@ root.render(
           <Route path="/Accomodation" element={<Accomodation />} />
           <Route path="/about" element={<About />} />
           <Route path="/test" element={<Test />} />
-          <Route path="/error" element={<Error />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/error" element={<ErrorPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BaseLayout>
     </Router>

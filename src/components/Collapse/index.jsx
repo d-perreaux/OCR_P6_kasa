@@ -16,7 +16,7 @@ function Collapse({ title, content }) {
             <div className='collapse__wrapper'>
                 <p className='collapse__wrapper__title'>{title}</p>
                 <button className={`collapse__wrapper__button ${isOpen? '--open' : ''}`} onClick={handleClick} >
-                    <img className='collapse__wrapper__button__chevron' src={chevron} alt='cliquer pour deployer le texte'></img>
+                    <img className={`collapse__wrapper__button__chevron ${isOpen? '--open' : ''}`} src={chevron} alt='cliquer pour deployer le texte'></img>
                 </button>
             </div>
             <div className={`collapse__collapsible ${isOpen? '--open' : ''}`}>
