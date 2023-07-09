@@ -1,5 +1,7 @@
+@import '../../variables.scss';
+
 .header {
-    margin: 24px 32px;
+    @include margin;
     display: flex;
     justify-content: space-between;
     &__logo-kasa{
