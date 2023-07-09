@@ -8,3 +8,7 @@ $breakpoint: (
     font-family: 'Montserrat', sans-serif;
 }
 
+@mixin no-margin {
+	margin: 0;
+}
+
