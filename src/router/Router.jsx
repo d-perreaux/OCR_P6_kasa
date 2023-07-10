@@ -13,7 +13,7 @@ function RouterComponent() {
                 <BaseLayout>
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/accomodation/advertId" element={<Accomodation />} />
+                        <Route path="/accomodation/:advertId" element={<Accomodation />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/error" element={<ErrorPage />} />
                         <Route path="*" element={<ErrorPage />} />
