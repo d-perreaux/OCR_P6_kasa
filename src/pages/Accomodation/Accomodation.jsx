@@ -3,6 +3,7 @@ import adverts from '../../backToFront/adverts.json'
 import { useEffect, useState } from 'react'
 
 import Tag from '../../components/Tag';
+import Rate from '../../components/Rate';
 
 import './style.scss'
 
@@ -40,6 +41,9 @@ function Accomodation() {
             {currentAdvert.tags.map( (tag, index) => 
                 <Tag key={`${index}-${tag}`} name={tag} />
             )}
+            </ul>
+            <ul className='accomodation__rate'>
+                <Rate rate={currentAdvert.rating}/>
             </ul>
             </>)}
             
