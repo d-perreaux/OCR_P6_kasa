@@ -18,7 +18,7 @@ root.render(
       <BaseLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Accomodation" element={<Accomodation />} />
+          <Route path="/accomodation/advertId" element={<Accomodation />} />
           <Route path="/about" element={<About />} />
           <Route path="/test" element={<Test />} />
           <Route path="/error" element={<ErrorPage />} />
