@@ -12,7 +12,7 @@ function Collapse({ title, content }) {
 
     return (
         <>  
-        <div className='collapse'>
+        <div className={`collapse ${isOpen? '--open' : ''}`}>
             <div className='collapse__wrapper'>
                 <p className='collapse__wrapper__title'>{title}</p>
                 <button className={`collapse__wrapper__button ${isOpen? '--open' : ''}`} onClick={handleClick} >

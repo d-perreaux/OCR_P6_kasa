@@ -1,6 +1,7 @@
-import Banner from "../components/Banner"
-import Collapse from "../components/Collapse"
-import img from '../assets/banner_about.jpg'
+import Banner from "../../components/Banner"
+import Collapse from "../../components/Collapse"
+import img from '../../assets/banner_about.jpg'
+import './style.scss'
 
 const aboutDatas = [
     { 

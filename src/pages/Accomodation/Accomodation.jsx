@@ -67,8 +67,12 @@ function Accomodation() {
                             </div>
                         </div>
                         <div className='third-accomodation-wrapper'>
-                            <Collapse title='Description' content={currentAdvert.description}/>
-                            <Collapse title='Équipements' content={currentAdvert.equipments.map((current, index) => <span key={`${index}-${current}`}>{current}</span>)}/>
+                            
+                                <Collapse title='Description' content={currentAdvert.description} />
+                            
+                            
+                                <Collapse title='Équipements' content={currentAdvert.equipments.map((current, index) => <span key={`${index}-${current}`}>{current}</span>)} />
+                            
                         </div>
                     </div>
                 </>)}

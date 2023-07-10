@@ -1,10 +1,15 @@
 @import '../../variables.scss';
 
 .collapse {
-    margin: 32px 88px;
+    margin: 32px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: $second-color;
+    background-color: white;
+
+    &.--open{
+        background-color: $second-color;
+    }
     
 
     &__wrapper{
