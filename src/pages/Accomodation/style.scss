@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+.accomodation{
+    @include margin;
+
+    &__tagList{
+        list-style-type: none;
+        display: flex;
+        gap: 8px;
+    }
+}
