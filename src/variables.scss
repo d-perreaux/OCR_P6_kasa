@@ -4,9 +4,7 @@
 $primary-color: #ff6060;
 $second-color: #F6F6F6;
 
-$breakpoint: (
-	desktop: 768px,
-);
+
 
 @mixin main-font {
     font-family: 'Montserrat', sans-serif;
@@ -20,3 +18,4 @@ $breakpoint: (
     margin: 24px 32px;
 }
 
+$breakpoint-mobile: 768px;

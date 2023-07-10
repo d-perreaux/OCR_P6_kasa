@@ -10,6 +10,10 @@
       position: absolute;
       width: 35px;
       z-index: 1;
+
+      @media (max-width: $breakpoint-mobile) {
+        width: 15px;
+      }
   
       &:hover {
         cursor: pointer;
@@ -36,6 +40,10 @@
       object-fit: cover;
       display: none;
       width: 100%;
+
+      @media (max-width: $breakpoint-mobile) {
+        height: 220px;
+      }
   
       &.actif {
         display: block;

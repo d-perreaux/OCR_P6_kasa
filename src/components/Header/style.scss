@@ -4,9 +4,15 @@
     @include margin;
     display: flex;
     justify-content: space-between;
+
     &__logo-kasa{
         max-width: 200px;
+
+        @media (max-width: $breakpoint-mobile) {
+            max-width: 112px;
+          }
     }
+
     &__nav{
         display: flex;
         justify-content: space-around;

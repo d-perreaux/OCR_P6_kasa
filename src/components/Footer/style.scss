@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .footer {
     height: 108px;
     padding-top: 25px;
@@ -6,10 +8,20 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+
+    @media (max-width: $breakpoint-mobile) {
+        height: 80px;
+      }
+
     &__logo{
         color: white;
         max-width: 125px;
+
+        @media (max-width: $breakpoint-mobile) {
+            max-width: 100px;
+          }
     }
+
     &__text{
         color: white;
     }

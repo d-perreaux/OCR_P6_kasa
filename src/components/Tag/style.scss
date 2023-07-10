@@ -5,8 +5,16 @@
     padding: 4px 18px;
     border-radius: 18px;
 
+    @media (max-width: $breakpoint-mobile) {
+        border-radius: 8px;
+      }
+
     &__name{
         color: white;
         font-size: 0.8em;
+
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 1em;
+          }
     }
 }

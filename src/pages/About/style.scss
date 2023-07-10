@@ -3,4 +3,8 @@
 .about{
     @include margin;
     padding: 0 50px;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 0;
+      }
 }

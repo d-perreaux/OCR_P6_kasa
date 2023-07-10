@@ -7,14 +7,14 @@
     grid-template-columns: 1fr;
     row-gap: 20px;
     
-    @media (min-width: 700px) {
+    @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
         background-color: $second-color;
         padding: 16px;
         column-gap: 16px;
         row-gap: 16px;
     }
-    @media (min-width: 1000px) {
+    @media (min-width: 1024px) {
         grid-template-columns: 1fr 1fr 1fr;
         padding: 20px;
         column-gap: 20px;
@@ -22,6 +22,9 @@
 
     &__card{
         height: 340px;
+        @media (max-width: $breakpoint-mobile) {
+            height: 200px;
+          }
 
         &__link{
             width: 100%;
@@ -32,8 +35,7 @@
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
-                border-radius: 10px;
-                
+                border-radius: 10px;                
 
                 &__title{
                     position: absolute;

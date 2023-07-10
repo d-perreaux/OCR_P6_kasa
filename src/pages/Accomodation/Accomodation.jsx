@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate  } from 'react-router-dom'
 import adverts from '../../backToFront/adverts.json'
 import { useEffect, useState } from 'react'
 
@@ -13,26 +13,27 @@ import Collapse from '../../components/Collapse';
 function Accomodation() {
     const [currentAdvertId, setCurrentAdvertId] = useState(null);
     const [currentAdvert, setCurrentAdvert] = useState(null);
-    const [isIdCorrect, setIsIdCorrect] = useState(false);
+    const [isIdCorrect, setIsIdCorrect] = useState(null);
 
     const urlId = useParams();
 
+    const navigate = useNavigate();
+
     useEffect(() => {
-        setCurrentAdvertId(urlId.advertId)
+        setCurrentAdvertId(urlId.advertId);
     }, [])
 
     useEffect(() => {
-        if (currentAdvertId > 0) {
-
+        const foundAdvert = (adverts.find(advert => advert.id === currentAdvertId));
+        if(currentAdvertId != null){
+            if (foundAdvert) {
+                setIsIdCorrect(true);
+                setCurrentAdvert(foundAdvert);
+            } else {
+                navigate('/error');
+            }
         }
-        const foundAdvert = (adverts.find(advert => advert.id === currentAdvertId))
-        if (foundAdvert) {
-            setIsIdCorrect(true);
-            setCurrentAdvert(foundAdvert);
-        }
-
     }, [currentAdvertId])
-
 
     return (
         <div className='accomodation'>
@@ -67,12 +68,8 @@ function Accomodation() {
                             </div>
                         </div>
                         <div className='third-accomodation-wrapper'>
-                            
                                 <Collapse title='Description' content={currentAdvert.description} />
-                            
-                            
                                 <Collapse title='Équipements' content={currentAdvert.equipments.map((current, index) => <span key={`${index}-${current}`}>{current}</span>)} />
-                            
                         </div>
                     </div>
                 </>)}

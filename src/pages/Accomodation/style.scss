@@ -11,6 +11,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+        margin: 0;
+      }
 }
 
 .accomodation {
@@ -24,10 +31,19 @@
             color: $primary-color;
             font-size: 1.3em;
             font-weight: 500;
+
+            @media (max-width: $breakpoint-mobile) {
+                font-size: 1.8em;
+                margin: 0;
+              }
         }
 
         &__location {
             color: $primary-color;
+            @media (max-width: $breakpoint-mobile) {
+                font-size: 1.5em;
+                margin: 8px 0;
+              }
         }
 
         &__tagList {
@@ -40,11 +56,22 @@
 
     &__host {
 
+        @media (max-width: $breakpoint-mobile) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+          }
+
         &__information {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             padding-top: 6px;
+
+            @media (max-width: $breakpoint-mobile) {
+                justify-content: center;
+              }
 
             &__name {
                 color: $primary-color;
@@ -58,12 +85,21 @@
                 &__img {
                     border-radius: 50%;
                     height: 70px;
+
+                    @media (max-width: $breakpoint-mobile) {
+                        height: 48px;
+                      }
                 }
             }
         }
 
         &__rate {
             display: flex;
+
+            @media (max-width: $breakpoint-mobile) {
+                justify-content: center;
+                padding-left: 0px;
+              }
         }
     }
 }
@@ -74,6 +110,12 @@
     width: 100%;
     justify-content: space-between; 
     gap: 40px;
+
+    
+    @media (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        gap: 0;
+      }
 }
 
 .third-accomodation-wrapper span{

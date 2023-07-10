@@ -2,4 +2,16 @@
 
 .accomodation__host__information__rate__item{
     list-style: none;
+
+    @media (max-width: $breakpoint-mobile) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+}
+
+.accomodation__host__information__rate__item img{
+    @media (max-width: $breakpoint-mobile) {
+        height: 22px;
+      }
 }
