@@ -1,15 +1,76 @@
 @import '../../variables.scss';
 
-.accomodation{
+.first-accomodation-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.second-accomodation-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.accomodation {
     @include margin;
+    display: flex;
+    justify-content: space-between;
 
-    &__tagList{
-        list-style-type: none;
-        display: flex;
-        gap: 8px;
+    &__informations {
+
+        &__title {
+            color: $primary-color;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        &__location {
+            color: $primary-color;
+        }
+
+        &__tagList {
+            list-style-type: none;
+            padding: 4px 0;
+            display: flex;
+            gap: 8px;
+        }
     }
 
-    &__rate{
-        display: flex;
+    &__host {
+
+        &__information {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 6px;
+
+            &__name {
+                color: $primary-color;
+                padding: 4px;
+            }
+
+            &__picture {
+                padding: 4px;
+                
+
+                &__img {
+                    border-radius: 50%;
+                    height: 70px;
+                }
+            }
+        }
+
+        &__rate {
+            display: flex;
+        }
     }
+}
+
+
+.third-accomodation-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
 }
