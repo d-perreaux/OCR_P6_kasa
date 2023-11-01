@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BaseLayout from '../components/BaseLayout';
 import Home from '../pages/Home';
 import Accomodation from '../pages/Accomodation/Accomodation';
@@ -9,10 +9,10 @@ import ErrorPage from '../pages/ErrorPage';
 function RouterComponent() {
     return (
         <React.StrictMode>
-            <Router basename="/OCR_P6_kasa/">
+            <Router basename="/OCR_P6_kasa">
                 <BaseLayout>
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route exact path="/OCR_P6_kasa" element={<Home />} />
                         <Route path="/accomodation/:advertId" element={<Accomodation />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/error" element={<ErrorPage />} />
