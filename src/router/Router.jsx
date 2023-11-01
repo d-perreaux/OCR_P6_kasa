@@ -9,10 +9,10 @@ import ErrorPage from '../pages/ErrorPage';
 function RouterComponent() {
     return (
         <React.StrictMode>
-            <Router basename="/OCR_P6_kasa">
+            <Router basename="/">
                 <BaseLayout>
                     <Routes>
-                        <Route exact path="/OCR_P6_kasa" element={<Home />} />
+                        <Route exact path="/" element={<Home />} />
                         <Route path="/accomodation/:advertId" element={<Accomodation />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/error" element={<ErrorPage />} />

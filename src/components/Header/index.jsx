@@ -7,7 +7,7 @@ function Header() {
         <header className='header'>
             <img className="header__logo-kasa" src={main_logo} alt='Kasa logo'></img>
             <nav className="header__nav">
-                <NavLink to='/OCR_P6_kasa'>Accueil</NavLink>
+                <NavLink to='/'>Accueil</NavLink>
                 <NavLink to='/about'>A Propos</NavLink>
             </nav>
         </header>
