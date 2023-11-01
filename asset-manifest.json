@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OCR_P6_kasa/static/css/main.f10a58f5.css",
-    "main.js": "/OCR_P6_kasa/static/js/main.2b524aca.js",
+    "main.js": "/OCR_P6_kasa/static/js/main.834d0335.js",
     "static/media/banner_home.jpg": "/OCR_P6_kasa/static/media/banner_home.a39ff6efbd1a91b3c8b4.jpg",
     "static/media/banner_about.jpg": "/OCR_P6_kasa/static/media/banner_about.10720cd2488c628ee695.jpg",
     "static/media/logo_white.svg": "/OCR_P6_kasa/static/media/logo_white.a704cd7679e4c79056dcca5dc733d583.svg",
@@ -12,10 +12,10 @@
     "static/media/chevron.svg": "/OCR_P6_kasa/static/media/chevron.b052dd29e3a2bab76700eee79e133c37.svg",
     "static/media/slider-arrow.svg": "/OCR_P6_kasa/static/media/slider-arrow.dda9892314ac4a082ee6a2b064998c28.svg",
     "main.f10a58f5.css.map": "/OCR_P6_kasa/static/css/main.f10a58f5.css.map",
-    "main.2b524aca.js.map": "/OCR_P6_kasa/static/js/main.2b524aca.js.map"
+    "main.834d0335.js.map": "/OCR_P6_kasa/static/js/main.834d0335.js.map"
   },
   "entrypoints": [
     "static/css/main.f10a58f5.css",
-    "static/js/main.2b524aca.js"
+    "static/js/main.834d0335.js"
   ]
 }
