@@ -1,5 +1,6 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 import BaseLayout from '../components/BaseLayout';
 import Home from '../pages/Home';
 import Accomodation from '../pages/Accomodation/Accomodation';
@@ -9,7 +10,8 @@ import ErrorPage from '../pages/ErrorPage';
 function RouterComponent() {
     return (
         <React.StrictMode>
-            <Router>
+            <HashRouter>
+            
                 <BaseLayout>
                     <Routes>
                         <Route path="/" element={<Home />} />
@@ -19,7 +21,8 @@ function RouterComponent() {
                         <Route path="*" element={<ErrorPage />} />
                     </Routes>
                 </BaseLayout>
-            </Router>
+            
+            </HashRouter>
         </React.StrictMode>
     )
 }
