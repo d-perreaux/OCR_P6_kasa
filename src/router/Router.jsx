@@ -9,7 +9,7 @@ import ErrorPage from '../pages/ErrorPage';
 function RouterComponent() {
     return (
         <React.StrictMode>
-            <Router basename="/OCR_P6_kasa">
+            <Router basename="/OCR_P6_kasa/">
                 <BaseLayout>
                     <Routes>
                         <Route path="/" element={<Home />} />
