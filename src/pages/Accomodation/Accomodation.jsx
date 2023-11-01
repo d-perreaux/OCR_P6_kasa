@@ -19,8 +19,11 @@ function Accomodation() {
 
     const navigate = useNavigate();
 
+
+    console.log(urlId.advertId);
     useEffect(() => {
         setCurrentAdvertId(urlId.advertId);
+        console.log(currentAdvertId);
     }, [])
 
     useEffect(() => {
