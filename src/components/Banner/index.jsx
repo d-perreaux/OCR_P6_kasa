@@ -6,7 +6,7 @@ function Banner({img, text}) {
             <img src={img} className='banner__img' alt='banière'></img>
             {text &&
             <div className='banner__text'>
-                <p>coucou</p>
+                <p>Chez vous, partout et ailleurs</p>
             </div>}
 
         </div>
