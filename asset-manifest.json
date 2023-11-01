@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/OCR_P6_kasa/static/css/main.f10a58f5.css",
+    "main.js": "/OCR_P6_kasa/static/js/main.a9908ef0.js",
+    "static/media/banner_home.jpg": "/OCR_P6_kasa/static/media/banner_home.a39ff6efbd1a91b3c8b4.jpg",
+    "static/media/banner_about.jpg": "/OCR_P6_kasa/static/media/banner_about.10720cd2488c628ee695.jpg",
+    "static/media/logo_white.svg": "/OCR_P6_kasa/static/media/logo_white.a704cd7679e4c79056dcca5dc733d583.svg",
+    "static/media/main_logo.svg": "/OCR_P6_kasa/static/media/main_logo.a5c76d8a1dac09edd59db36304e0bcfa.svg",
+    "static/media/star-active.svg": "/OCR_P6_kasa/static/media/star-active.f47de1483d883b69c6210d622f75c05c.svg",
+    "static/media/star-inactive.svg": "/OCR_P6_kasa/static/media/star-inactive.c864407432a61da616f95e669105d42e.svg",
+    "index.html": "/OCR_P6_kasa/index.html",
+    "static/media/chevron.svg": "/OCR_P6_kasa/static/media/chevron.b052dd29e3a2bab76700eee79e133c37.svg",
+    "static/media/slider-arrow.svg": "/OCR_P6_kasa/static/media/slider-arrow.dda9892314ac4a082ee6a2b064998c28.svg",
+    "main.f10a58f5.css.map": "/OCR_P6_kasa/static/css/main.f10a58f5.css.map",
+    "main.a9908ef0.js.map": "/OCR_P6_kasa/static/js/main.a9908ef0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f10a58f5.css",
+    "static/js/main.a9908ef0.js"
+  ]
+}
