@@ -10,7 +10,7 @@ import ErrorPage from '../pages/ErrorPage';
 function RouterComponent() {
     return (
         <React.StrictMode>
-            <HashRouter>
+            <HashRouter basename="/OCR_P6_kasa">
             
                 <BaseLayout>
                     <Routes>
