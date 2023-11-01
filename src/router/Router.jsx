@@ -12,7 +12,7 @@ function RouterComponent() {
             <Router basename="/OCR_P6_kasa">
                 <BaseLayout>
                     <Routes>
-                        <Route exact path="/OCR_P6_kasa" element={<Home />} />
+                        <Route exact path="/" element={<Home />} />
                         <Route path="/accomodation/:advertId" element={<Accomodation />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/error" element={<ErrorPage />} />
